@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="kompresija.css" />
+  </head>
+  <body>
+    <!--izbor formata-->
+    <div id="actionDiv">
+      <h2 id="actionDivKompresija">Kompresija videa</h2>
+      <h2 id="actionDivMera">Mera performansi videa</h2>
+    </div>
+
+    <div id="contentDiv">
+      <video id="videoPlayer1" width="320" height="240" controls></video>
+      <input type="file" id="inputVideo1" />
+
+      <div id="fileSizeForm">
+        <label for="fileSize">Veličina fajla:</label><br />
+        <input type="text" id="fileSize" name="fileSize" readonly /><br />
+      </div>
+
+      <!--izbor formata-->
+      <label for="selektIzlaz">Izaberite izlazni format:</label>
+      <select id="selektIzlaz">
+        <option value="avi">Avi</option>
+        <option value="mpg">Mpg</option>
+      </select>
+
+      <!--izbor rezolucije-->
+      <label for="selektRezolucija">Izaberite rezoluciju:</label>
+      <select id="selektRezolucija">
+        <option value="1920x1080">1920x1080</option>
+        <option value="1280x720">1280x720</option>
+        <option value="854x480">854x480</option>
+        <option value="640x360">640x360</option>
+      </select>
+
+      <!--izbor bitrate-->
+      <label for="selektBitrate">Izaberite bitrate:</label>
+      <select id="selektBitrate">
+        <option value="1500k">1500kb/s</option>
+        <option value="1000k">1000kb/s</option>
+        <option value="500k">500kb/s</option>
+        <option value="200k">200kb/s</option>
+      </select>
+
+      <!--izbor fps-->
+      <label for="selektFps">Izaberite fps:</label>
+      <select id="selektFps">
+        <option value="60">60</option>
+        <option value="50">50</option>
+        <option value="30">30</option>
+        <option value="25">25</option>
+      </select>
+
+      <!--izbor kodera-->
+      <label for="selektKoder">Izaberite koder:</label>
+      <select id="selektKoder">
+        <option value="rawvideo">Raw video</option>
+        <option value="mpeg1video">Mpg1</option>
+      </select>
+
+      <button id="ok" type="button">ok</button>
+
+      <h1 id="rezultatObrade">REZULTAT OBRADE</h1>
+      <textarea
+        id="stdout"
+        name="stdout"
+        rows="20"
+        cols="50"
+        readonly
+      ></textarea>
+      </div>
+    </div>
+    <script src="kompresija.js"></script>
+  </body>
+</html>

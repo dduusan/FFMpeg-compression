@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="mera.css" />
+  </head>
+  <body>
+    <!--izbor formata-->
+    <div id="actionDiv">
+      <h2 id="actionDivKompresija">Kompresija videa</h2>
+      <h2 id="actionDivMera">Mera performansi videa</h2>
+    </div>
+
+    <div id="contentDiv">
+      <input type="file" id="inputVideo1" />
+      <input type="file" id="inputVideo2" />
+
+      <!--da li da se izvrsava ssim i psnr-->
+      <label for="selektMera">Izaberite meru performansi:</label>
+      <select id="selektMera">
+        <option value="ssim">ssim</option>
+        <option value="psnr">psnr</option>
+      </select>
+
+      <button id="ok" type="button">ok</button>
+
+      <h1 id="rezultatObrade">REZULTAT OBRADE</h1>
+      <textarea
+        id="stdout"
+        name="stdout"
+        rows="20"
+        cols="50"
+        readonly
+      ></textarea>
+    </div>
+    <script src="mera.js"></script>
+  </body>
+</html>

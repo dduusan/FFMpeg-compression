@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#actionDiv {
+  display: flex;
+  justify-content: center;
+  background-color: #6b6a6a;
+  padding: 10px;
+  color: white;
+  align-items: center;
+  gap: 20px;
+}
+
+
+#actionDivKompresija:hover {
+  cursor: pointer;
+}
+
+#actionDivMera {
+  border-bottom: 5px solid #969696;
+}
+
+#actionDivMera:hover {
+  cursor: pointer;
+}
+
+#contentDiv {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  gap: 10px;
+}
